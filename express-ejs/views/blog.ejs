@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title> <%= title %> </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
@@ -39,14 +39,23 @@
             <ul>
                 <li class="logo"><a href="/">home</a> </li>
                 <li> <a href="/blog">blog</a></li>
+                <li><a href="/create/blog">create post</a></li>
                 <li> <a href="/about">about</a> </li>
 
             </ul>
         </header>
         <main>
             <h1>Blog page</h1>
-       <p>Welcome to by blogsite Where i Teach about django
-         and web-related techs</p>
+       
+            <section class="content">
+                <% if (blogs.length > 0) { %>
+                    <% blogs.forEach((blog)=>{ %>
+                        <h3>Title:  <%= blog.title %> </h3>
+                        <p> Snippet: <%= blog.snippet %> </p>
+
+                    <% }) %>    
+                <% } %>
+            </section>
        
     </main>
         <script src="" async defer></script>

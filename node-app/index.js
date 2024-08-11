@@ -1,11 +1,8 @@
-// Creating a serve
-
+// Creating a server 
 const http = require("http");
 
-//we import fs to read html files from views that will be render to the client
+//we import fs to read html files from views that will be rendered to the client
 const fs = require("fs");
-
-
 
 const server = http.createServer((req, res) => {
     //The createServe takes two objects, the request and the response objects.
@@ -28,6 +25,7 @@ const server = http.createServer((req, res) => {
         case "/about-me":
             res.statusCode = 301
             res.setHeader("Location", "/about")
+            break;
         case "/blog":
             path += "blog.html"
             res.statusCode = 200;

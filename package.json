@@ -1,0 +1,24 @@
+{
+  "name": "js.project",
+  "version": "1.0.0",
+  "description": "This is a basic Node.js project created for practice. The project includes a simple server setup and demonstrates the use of Node.js core modules(http), to create a server and render a html basic website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Franklyn883/node-js.project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Franklyn883/node-js.project/issues"
+  },
+  "homepage": "https://github.com/Franklyn883/node-js.project#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "lodash": "^4.17.21"
+  }
+}
