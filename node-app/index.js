@@ -26,8 +26,8 @@ const server = http.createServer((req, res) => {
             res.statusCode = 301
             res.setHeader("Location", "/about")
             break;
-        case "/blog":
-            path += "blog.html"
+        case "/contact":
+            path += "contact.html"
             res.statusCode = 200;
             break;
         default:
@@ -49,9 +49,9 @@ const server = http.createServer((req, res) => {
    
 });
 
-server.listen(3000, "localhost", () => {
+server.listen(8080, "localhost", () => {
     // The serve listen to the client for any request made to the specified port
     // and localhost and then calls the callback function
 
-    console.log("Listening for requests on port 3000");
+    console.log("Listening for requests on port 8080");
 });
